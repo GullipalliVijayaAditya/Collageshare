@@ -1,27 +1,27 @@
 package com.example.android.collageshare;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.example.android.collageshare.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+/**
+ * Created by gvrao on 16-Mar-18.
+ */
 
-
-public class HomeActivity extends AppCompatActivity {
-
-    private static final String TAG = "HomeActivity";
+public class LikesActivity extends AppCompatActivity {
+    private static final String TAG = "LikesActivity";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Log.d(TAG, "onCreate: starting.");
-
+        Log.d(TAG, "onCreate; started.");
         setupBottomNavigationView();
     }
-
     /**
      * BottomNavigationView setup
      */
